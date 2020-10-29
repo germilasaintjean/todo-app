@@ -28,7 +28,7 @@ const App = ({ classes }) => (
     <main className={classes.main}>
       <Route exact path="/" component={Home} />
       <SecureRoute path="/posts" component={PostsManager} />
-    <Route path="/login/callback" component={LoginCallback} />
+    <Route path="/implicit/callback" component={LoginCallback} />
     </main>
   </Fragment>
 );

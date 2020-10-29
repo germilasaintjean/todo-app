@@ -56,7 +56,7 @@ class PostsManager extends Component {
         headers: {
           'content-type': 'application/json',
           accept: 'application/json',
-          authorization: `Bearer ${await this.props.auth.getAccessToken()}`,
+          authorization: `Bearer ${await this.props.authService.getAccessToken()}`,
         },
       });
       return await response.json();
