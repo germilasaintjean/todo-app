@@ -30,6 +30,7 @@
     "sequelize": "^6.3.5",
     "server.js": "^1.0.0",
     "serviceworker-webpack-plugin": "^1.0.1",
+    "sqlite3": "^5.0.0",
     "uuid": "^3.3.2",
     "web-vitals": "^0.2.4"
   },

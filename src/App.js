@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 import { SecureRoute, LoginCallback } from '@okta/okta-react';
-//import { LoginCallback } from '@okta/okta-react';
-
 import {
   CssBaseline,
   withStyles,
@@ -28,10 +26,9 @@ const App = ({ classes }) => (
     <main className={classes.main}>
       <Route exact path="/" component={Home} />
       <SecureRoute path="/posts" component={PostsManager} />
-    <Route path="/implicit/callback" component={LoginCallback} />
+      <Route path="/implicit/callback" component={LoginCallback} />
     </main>
   </Fragment>
 );
-
 
 export default withStyles(styles)(App);
